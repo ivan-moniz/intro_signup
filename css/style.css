@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-pass, .input-email, .input-lname, .input-fname {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-secondary, .btn-primary {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  padding: 18px 20px;
+  border-radius: 10px;
+  background: #6055a5;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+  background: #38cc8c;
+  box-shadow: 0px 5px 0px 0px #61d6a3;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #ff7a7a;
+}
+
+.showcase {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.showcase .container .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+.showcase .container .flex-container .text-container h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 0 2em 0 0;
+  line-height: 1.2;
+}
+.showcase .container .flex-container .text-container p {
+  font-weight: 500;
+  color: #eee;
+  padding: 1rem 2rem 0 0;
+  font-size: 1rem;
+}
+.showcase .container .flex-container .form-container {
+  margin: 10px;
+}
+.showcase .container .flex-container .form-container a {
+  text-decoration: none;
+}
+.showcase .container .flex-container .form-container a span {
+  font-weight: 700;
+}
+.showcase .container .flex-container .form-container .header-form {
+  margin-top: 40px;
+  padding: 30px 40px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 480px;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.showcase .container .flex-container .form-container .header-form .alert {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #38cc8c;
+  margin-bottom: 10px;
+  display: none;
+}
+.showcase .container .flex-container .form-container .header-form p {
+  font-weight: 700;
+  color: #b9b6d3;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.showcase .container .flex-container .form-container .header-form p span {
+  color: #ff7a7a;
+}
+.showcase .container .flex-container .form-container .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.showcase .container .flex-container .form-container .form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.showcase .container .flex-container .form-container .form-control small {
+  color: #ff7a7a;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  visibility: hidden;
+}
+.showcase .container .flex-container .form-container .sucess input {
+  border: 1px solid #38cc8c;
+}
+.showcase .container .flex-container .form-container .error input {
+  border: 1px solid #ff7a7a;
+}
+.showcase .container .flex-container .form-container .error i {
+  visibility: visible;
+}
+.showcase .container .flex-container .form-container .error small {
+  visibility: visible;
+  font-style: italic;
+}
+
+footer .attribution {
+  text-align: center;
+}
+footer .attribution a {
+  text-decoration: none;
+  color: #6055a5;
+}
+
+@media (max-width: 701px) {
+  .showcase .container .flex-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .showcase .container .flex-container .text-container h2 {
+    font-size: 2.8rem;
+    padding: 1rem;
+  }
+  .showcase .container .flex-container .text-container p {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .showcase .container .flex-container .text-container h2 {
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+  }
+  .showcase .container .flex-container .text-container p {
+    font-weight: 700;
+  }
+  .showcase .container .flex-container .form-container {
+    margin: 0;
+  }
+  .showcase .container .flex-container .form-container .button-control .btn-primary {
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem 3rem;
+    line-height: 1.4;
+  }
+  .showcase .container .flex-container .form-container .header-form {
+    margin: 30px 20px;
+    width: 300px;
+  }
+  .showcase .container .flex-container .form-container .header-form p {
+    line-height: 1.5;
+    font-size: 0.7rem;
+    padding: 0.5rem 0rem;
+  }
+
+  footer .attribution {
+    padding: 1rem 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

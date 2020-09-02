@@ -1,0 +1,24 @@
+%input {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.input-fname {
+  @extend %input;
+}
+.input-lname {
+  @extend %input;
+
+}
+.input-email {
+  @extend %input;
+}
+.input-pass {
+  @extend %input;
+}

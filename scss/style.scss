@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'config';
+@import 'input';
+@import 'buttons';
+
+body {
+  font-family: $font-stack;
+  font-size: 16px;
+  background: $primary-color;
+}
+
+.showcase {
+  background-image: url('../images/bg-intro-desktop.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  .container {
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8rem;
+      .text-container {
+        h2 {
+          color: #fff;
+          font-size: 3rem;
+          padding: 0 2em 0 0;
+          line-height: 1.2;
+        }
+        p {
+          font-weight: 500;
+          color: #eee;
+          padding: 1rem 2rem 0 0;
+          font-size: 1rem;
+        }
+      }
+      .form-container {
+        margin: 10px;
+
+        a {
+          text-decoration: none;
+          span { font-weight: 700; }
+          }
+
+        .header-form {
+          .alert {
+            color: #fff;
+            text-align: center;
+            padding: .5rem;
+            background-color: $secondary-color;
+            margin-bottom: 10px;
+            display: none;
+          }
+          margin-top: 40px;
+          padding: 30px 40px;
+          overflow: hidden;
+          border-radius: 5px;
+          width: 480px;
+          max-width: 100%;
+          background: #fff;
+          box-shadow: 5px 10px 5px 5px  rgba(0, 0, 0, 0.2);
+
+          p {
+            font-weight: 700;
+            color: $gray-blue;
+            font-size: .7rem;
+            text-align: center;
+            span {
+              color: $primary-color;
+            }
+          }
+        }
+
+          .form-control {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+            i {
+              visibility: hidden;
+              position: absolute;
+              top: 10px;
+              right: 10px;
+            }
+            small {
+              color: $primary-color;
+              position: absolute;
+              bottom: 0;
+              right: 10px;
+              visibility: hidden;
+            }
+        }
+        .sucess {
+          input {
+            border: 1px solid $secondary-color;
+          }
+
+        }
+        .error {
+          input {
+            border: 1px solid $primary-color;
+          }
+          i {
+            visibility: visible;
+          }
+          small {
+            visibility: visible;
+            font-style: italic;
+          }
+       }
+      }
+    }
+  }
+}
+
+
+footer {
+  .attribution {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $accent-color;
+    }
+  }
+}
+@import 'mobile';
